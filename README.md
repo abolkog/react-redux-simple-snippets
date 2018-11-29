@@ -6,4 +6,8 @@ These snippets are selected based on my own use. Not everything is included, it 
 ## Snippets List
 | Trigger | Result |
 | ------- | ------ |
-| `cc`   | React class component skeleton |
+| `rcc`   | React class component skeleton |
+| `rccc`  | React class component with constructor skeleton |
+| `rfc`   | React stateless component skeleton |
+| `con`   | Creates class constructor |
+| `ss`    | setState shortcut |

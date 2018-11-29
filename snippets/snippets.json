@@ -1,21 +1,77 @@
 {
-    "Class Component": {
-        "prefix": "cc",
-        "description": "Create Class Based Component",
-        "body": [
-            "import React, { Component } from 'react';",
-            " ",
-            "class $1 extends Component {",
-            "\trender() { ",
-            "\t\treturn (",
-            "\t\t\t<div>",
-            "\t\t\t\t$1",
-            "\t\t\t</div>",
-            "\t\t);",
-            "\t}",
-            "}",
-            " ",
-            "export default $1;"
-        ]
-    }
+  "Class Component": {
+    "prefix": "rcc",
+    "description": "Class Based Component Skeleton",
+    "body": [
+      "import React, { Component } from 'react';",
+      " ",
+      "class $1 extends Component {",
+      "\trender() { ",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$1",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ]
+  },
+  "Class Component with Constructor": {
+    "prefix": "rccc",
+    "description": "Class Component with Constructor Skeleton",
+    "body": [
+      "import React, { Component } from 'react';",
+      " ",
+      "class $1 extends Component {",
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {};",
+      "\t}",
+      "\trender() { ",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$1",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ]
+  },
+  "Stateless Component": {
+    "prefix": "rfc",
+    "description": "Stateless Based Component Skeleton",
+    "body": [
+      "import React from 'react';",
+      " ",
+      "const $1 = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$1",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      " ",
+      "export default $1;"
+    ]
+  },
+  "Class Constructor": {
+    "prefix": "con",
+    "description": "Creates Class Constructor Skeleton",
+    "body": [
+      "constructor(props) {",
+      "\tsuper(props);",
+      "\tthis.state = {};",
+      "}",
+      " "
+    ]
+  },
+  "Set State": {
+    "prefix": "ss",
+    "body": ["this.setState({ $1 });"],
+    "description": "setState"
+  }
 }
