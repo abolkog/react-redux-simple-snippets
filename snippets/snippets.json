@@ -1,5 +1,6 @@
 {
-  "Class Component": {
+  
+  "React Class Component": {
     "prefix": "rcc",
     "description": "Class Based Component Skeleton",
     "body": [
@@ -18,7 +19,7 @@
       "export default $1;"
     ]
   },
-  "Class Component with Constructor": {
+  "React Class Component with Constructor": {
     "prefix": "rccc",
     "description": "Class Component with Constructor Skeleton",
     "body": [
@@ -39,6 +40,79 @@
       "}",
       " ",
       "export default $1;"
+    ]
+  },
+  "React Class Component with Redux Connect": {
+    "prefix": "rcr",
+    "description": "Class Based Component with React Redux",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { connect } from 'react-redux';",
+      " ",
+      "class $1 extends Component {",
+      "\trender() { ",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$1",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      " ",
+      "export default connect()($1);"
+    ]
+  },
+  "React Native Component": {
+    "prefix": "rncc",
+    "description": "Creates React Native Class Based Component Skeleton",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      " ",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "});",
+      " ",
+      "class $1 extends Component {",
+      "\trender() { ",
+      "\t\treturn (",
+      "\t\t\t<View style={styles.container}>",
+      "\t\t\t\t<Text>$1</Text>",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      " ",
+      "export default $1;"
+    ]
+  },
+  "React Native Component with Redux Connect": {
+    "prefix": "rncr",
+    "description": "Creates React Native Class Based Component with Redux Connect Skeleton",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      "import { connect } from 'react-redux';",
+      " ",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "});",
+      " ",
+      "class $1 extends Component {",
+      "\trender() { ",
+      "\t\treturn (",
+      "\t\t\t<View style={styles.container}>",
+      "\t\t\t\t<Text>$1</Text>",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      " ",
+      "export default connect()($1);"
     ]
   },
   "Stateless Component": {
@@ -73,5 +147,42 @@
     "prefix": "ss",
     "body": ["this.setState({ $1 });"],
     "description": "setState"
+  },
+  "Import React": {
+    "prefix": "imr",
+    "description": "Import React",
+    "body": ["import React from 'react';"]
+  },
+  "Import React Native Element": {
+    "prefix": "imrn",
+    "description": "Import React Native Element",
+    "body": ["import { $1 } from 'react-native';"]
+  },
+  "React Native StyleSheet": {
+    "prefix": "rnss",
+    "description": "React Native style sheet",
+    "body": [
+        "const styles = StyleSheet.create({",
+        "\t$1: {",
+        "\t\t$0",
+        "\t}",
+        "});"
+    ]
+  },
+  "Redux Reducer": {
+    "prefix": "reducer",
+    "description": "Creates Redux reducer skeleton.",
+    "body": [
+      "const INITIAL_STATE = {};",
+      " ",
+      "export const $1 = (state = INITIAL_STATE, action) => {",
+      "\tswitch (action.type) {",
+      "\t\tcase '${2:ACTION_TYPE}':",
+      "\t\t\treturn $4$0",
+      "\t\tdefault:",
+      "\t\t\treturn state",
+      "\t}",
+      "}"
+    ]
   }
 }
