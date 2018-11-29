@@ -1,0 +1,45 @@
+{
+  "name": "react-redux-simple-snippets",
+  "displayName": "React Redux Simple Snippets",
+  "description": "React, React Native and Redux basic snippets",
+  "version": "1.0.0",
+  "publisher": "abolkog",
+  "author": {
+    "name": "Khalid Elshafie",
+    "url": "https://abolkog.com"
+  },
+  "license": "MIT",
+  "icon": "images/react-logo.png",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abolkog/react-redux-simple-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abolkog/react-redux-simple-snippets/issues"
+  },
+  "homepage": "https://github.com/abolkog/react-redux-simple-snippets#readme",
+  "engines": {
+    "vscode": "^1.24.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "keywords": [
+    "react",
+    "snippets",
+    "redux",
+    "snippets"
+  ]
+}
