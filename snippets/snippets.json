@@ -1,0 +1,21 @@
+{
+    "Class Component": {
+        "prefix": "cc",
+        "description": "Create Class Based Component",
+        "body": [
+            "import React, { Component } from 'react';",
+            " ",
+            "class $1 extends Component {",
+            "\trender() { ",
+            "\t\treturn (",
+            "\t\t\t<div>",
+            "\t\t\t\t$1",
+            "\t\t\t</div>",
+            "\t\t);",
+            "\t}",
+            "}",
+            " ",
+            "export default $1;"
+        ]
+    }
+}
