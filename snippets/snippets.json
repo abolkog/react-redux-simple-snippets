@@ -175,14 +175,25 @@
     "body": [
       "const INITIAL_STATE = {};",
       " ",
-      "export const $1 = (state = INITIAL_STATE, action) => {",
+      "export default (state = INITIAL_STATE, action) => {",
       "\tswitch (action.type) {",
-      "\t\tcase '${2:ACTION_TYPE}':",
-      "\t\t\treturn $4$0",
+      "\t\tcase '${1:ACTION_TYPE}':",
+      "\t\t\treturn {...state}",
       "\t\tdefault:",
       "\t\t\treturn state",
       "\t}",
       "}"
+    ]
+  },
+  "MapStateToProps": {
+    "prefix": "mstb",
+    "description": "mapStateToProps arrow function",
+    "body": [
+      "const mapStateToProps = ($1) => {",
+      "\t return {",
+      "\t\t$2",
+      "\t};",
+      "};"
     ]
   }
 }
