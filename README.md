@@ -23,6 +23,7 @@ These snippets are selected based on my own use. Not everything is included, it 
 | `imrn`    | Import React Native Element |
 | `rnss`    | React Native StyleSheet |
 | `reducer` | Redux Reducer skeleton |
+| `action`  | Action Creator skeleton |
 
 
 # Snippets
@@ -186,11 +187,22 @@ const INITIAL_STATE = {};
 
 export const $1 = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case 'ACTION_TYPE':
+        case $2:
             return 
         default:
             return state
     }
 }
+```
+
+### `action`
+```javascript
+export const $1 = () => {
+  return async dispatch => {
+    try {
+        $2
+    } catch (e) {}
+  };
+};
 ```
 

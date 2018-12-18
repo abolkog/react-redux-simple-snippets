@@ -177,7 +177,7 @@
       " ",
       "export default (state = INITIAL_STATE, action) => {",
       "\tswitch (action.type) {",
-      "\t\tcase '${1:ACTION_TYPE}':",
+      "\t\tcase $2:",
       "\t\t\treturn {...state}",
       "\t\tdefault:",
       "\t\t\treturn state",
@@ -186,12 +186,25 @@
     ]
   },
   "MapStateToProps": {
-    "prefix": "mstb",
+    "prefix": "mstp",
     "description": "mapStateToProps arrow function",
     "body": [
       "const mapStateToProps = ($1) => {",
       "\t return {",
       "\t\t$2",
+      "\t};",
+      "};"
+    ]
+  },
+  "ActionCreator": {
+    "prefix": "action",
+    "description": "Action creator thunk",
+    "body": [
+      "export const $1 = () => {",
+      "\treturn async dispatch => {",
+      "\t\ttry {",
+      "\t\t$2",
+      "\t\t} catch (e) {}",
       "\t};",
       "};"
     ]
