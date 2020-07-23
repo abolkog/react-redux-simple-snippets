@@ -1,5 +1,4 @@
 {
-  
   "React Class Component": {
     "prefix": "rcc",
     "description": "Class Based Component Skeleton",
@@ -120,6 +119,7 @@
     "description": "Stateless Based Component Skeleton",
     "body": [
       "import React from 'react';",
+      "import PropTypes from 'prop-types';",
       " ",
       "const $1 = () => {",
       "\treturn (",
@@ -128,6 +128,8 @@
       "\t\t</div>",
       "\t);",
       "}",
+      " ",
+      "$1.propTypes = {};",
       " ",
       "export default $1;"
     ]
@@ -162,11 +164,11 @@
     "prefix": "rnss",
     "description": "React Native style sheet",
     "body": [
-        "const styles = StyleSheet.create({",
-        "\t$1: {",
-        "\t\t$0",
-        "\t}",
-        "});"
+      "const styles = StyleSheet.create({",
+      "\t$1: {",
+      "\t\t$0",
+      "\t}",
+      "});"
     ]
   },
   "Redux Reducer": {
