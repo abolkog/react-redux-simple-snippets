@@ -16,7 +16,8 @@ These snippets are selected based on my own use. Not everything is included, it 
 | `rcc`     | React class component skeleton                  |
 | `rccc`    | React class component with constructor skeleton |
 | `rcr`     | React class component with redux connect        |
-| `rncc`    | React Native component skeleton                 |
+| `rncc`    | React Native class component skeleton           |
+| `rnfc`    | React Native functional component skeleton      |
 | `rncr`    | React Native component with redux connect       |
 | `rfc`     | React stateless component skeleton              |
 | `con`     | Creates class constructor                       |
@@ -97,6 +98,29 @@ class $1 extends Component {
     );
   }
 }
+
+export default $1;
+```
+
+### `rnfc`
+
+```javascript
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+
+const $1 = () => {
+  return (
+    <View style={styles.container}>
+      <Text>$1</Text>
+    </View>
+  );
+};
 
 export default $1;
 ```
@@ -196,7 +220,7 @@ export const $1 = (state = INITIAL_STATE, action) => {
 
 ```javascript
 export const $1 = () => {
-  return async dispatch => {
+  return async (dispatch) => {
     try {
       $2;
     } catch (e) {}
