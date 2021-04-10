@@ -1,0 +1,50 @@
+{
+  "React Native Functional Component": {
+    "prefix": "rnfct",
+    "description": "Creates React Native Functional Component Skeleton",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      " ",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "});",
+      " ",
+      "const $1 = () => {",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t<Text>$1</Text>",
+      "\t\t</View>",
+      "\t);",
+      "}",
+      "",
+      " ",
+      "export default $1;"
+    ]
+  },
+  "React Component": {
+    "prefix": "rfct",
+    "description": "React Component Skeleton",
+    "body": [
+      "type $1Props = {}",
+      " ",
+      "const $1:React.FC<$1Props> = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$1",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      " ",
+      " ",
+      "export default $1;"
+    ]
+  },
+  "useState Hook": {
+    "prefix": "rusth",
+    "description": "React useState hook",
+    "body": ["const [$1, set$1] = useState();"]
+  }
+}

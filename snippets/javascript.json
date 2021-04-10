@@ -159,10 +159,25 @@
       "export default $1;"
     ]
   },
-  "useState Hook": {
-    "prefix": "rusth",
-    "description": "React useState hook",
-    "body": ["const [$1, set$1] = useState();"]
+  "Functional Component TypeScript": {
+    "prefix": "rfct",
+    "description": "React Functional Component Skeleton for TypeScript",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      " ",
+      "const $1 = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$1",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      " ",
+      "$1.propTypes = {};",
+      " ",
+      "export default $1;"
+    ]
   },
   "Class Constructor": {
     "prefix": "con",

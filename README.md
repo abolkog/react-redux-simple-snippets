@@ -8,222 +8,49 @@ These snippets are selected based on my own use. Not everything is included, it 
 
 - JavaScript (.js)
 - JavaScript React (.jsx)
+- TypeScript React (.tsx)
 
 # Snippets List
 
-| Trigger   | Result                                          |
-| --------- | ----------------------------------------------- |
-| `rcc`     | React class component skeleton                  |
-| `rccc`    | React class component with constructor skeleton |
-| `rcr`     | React class component with redux connect        |
-| `rncc`    | React Native class component skeleton           |
-| `rnfc`    | React Native functional component skeleton      |
-| `rncr`    | React Native component with redux connect       |
-| `rfc`     | React stateless component skeleton              |
-| `con`     | Creates class constructor                       |
-| `ss`      | setState shortcut                               |
-| `imr`     | Import React                                    |
-| `imrn`    | Import React Native Element                     |
-| `rnss`    | React Native StyleSheet                         |
-| `reducer` | Redux Reducer skeleton                          |
-| `action`  | Action Creator skeleton                         |
+## React
 
-# Snippets
+| Trigger | Result                                          |
+| ------- | ----------------------------------------------- |
+| `rfc`   | React functional component skeleton             |
+| `rusth` | useState hook                                   |
+| `rcc`   | React class component skeleton                  |
+| `rccc`  | React class component with constructor skeleton |
+| `rcr`   | React class component with redux connect        |
+| `con`   | Creates class constructor                       |
+| `ss`    | setState shortcut                               |
 
-### `rcc`
+<br /><br />
 
-```javascript
-import React, { Component } from 'react';
+## React (Typescript)
 
-class $1 extends Component {
-  render() {
-    return <div>$1</div>;
-  }
-}
+| Trigger | Result                                     |
+| ------- | ------------------------------------------ |
+| `rfct`  | React stateless component skeleton         |
+| `rnfct` | React Native functional component skeleton |
+| `rusth` | useState hook                              |
 
-export default $1;
-```
+<br /><br />
 
-### `rccc`
+## React Native
 
-```javascript
-import React, { Component } from 'react';
+| Trigger | Result                                     |
+| ------- | ------------------------------------------ |
+| `rncc`  | React Native class component skeleton      |
+| `rnfc`  | React Native functional component skeleton |
+| `rncr`  | React Native component with redux connect  |
+| `imrn`  | Import React Native Element                |
+| `rnss`  | React Native StyleSheet                    |
 
-class $1 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return <div>$1</div>;
-  }
-}
+<br /><br />
 
-export default $1;
-```
+## Redux
 
-### `rcr`
-
-```javascript
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-class $1 extends Component {
-  render() {
-    return <div>$1</div>;
-  }
-}
-
-export default connect()($1);
-```
-
-### `rncc`
-
-```javascript
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-class $1 extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>$1</Text>
-      </View>
-    );
-  }
-}
-
-export default $1;
-```
-
-### `rnfc`
-
-```javascript
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-const $1 = () => {
-  return (
-    <View style={styles.container}>
-      <Text>$1</Text>
-    </View>
-  );
-};
-
-export default $1;
-```
-
-### `rncr`
-
-```javascript
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { connect } from 'react-redux';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-class $1 extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>$1</Text>
-      </View>
-    );
-  }
-}
-
-export default connect()($1);
-```
-
-### `rfc`
-
-```javascript
-import React from 'react';
-import PropTypes from 'prop-types';
-
-const $1 = () => {
-  return <div>$1</div>;
-};
-
-$1.propTypes = {};
-
-export default $1;
-```
-
-### `con`
-
-```javascript
-constructor(props) {
-    super(props);
-    this.state = {};
-}
-```
-
-### `ss`
-
-```javascript
-this.setState({ $1 });
-```
-
-### `imr`
-
-```javascript
-import React from 'react';
-```
-
-### `imrn`
-
-```javascript
-import { $1 } from 'react-native';
-```
-
-### `rnss`
-
-```javascript
-const styles = StyleSheet.create({
-  $1: {},
-});
-```
-
-### `reducer`
-
-```javascript
-const INITIAL_STATE = {};
-
-export const $1 = (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-    case $2:
-      return;
-    default:
-      return state;
-  }
-};
-```
-
-### `action`
-
-```javascript
-export const $1 = () => {
-  return async (dispatch) => {
-    try {
-      $2;
-    } catch (e) {}
-  };
-};
-```
+| Trigger   | Result                  |
+| --------- | ----------------------- |
+| `reducer` | Redux Reducer skeleton  |
+| `action`  | Action Creator skeleton |
