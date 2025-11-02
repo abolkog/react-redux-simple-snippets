@@ -2,6 +2,14 @@
 
 All notable changes to the "react-redux-simple-snippets" extension will be documented in this file.
 
+## [1.2.5]
+
+- Remove unused snippets
+
+## [1.2.4]
+
+- Add support for typescript
+
 ## [1.2.3]
 
 - Add `rnfc` to generate React Native functional component
